@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% block nav %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <!-- <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="/" class="logo me-auto"><img src="assets/img/ATT-logo.png" alt="" class="img-fluid">AVITSENNA
+            TIBBIYOT TEXNIKUMI</a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto active" href="{% url 'index' %}">Bosh sahifa</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'about' %}">Biz haqimizda</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'qabul' %}">Qabul</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'yonalishlar' %}">Yo'nalishlar</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'rahbariyat' %}">Rahbariyat</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'news' %}">Yangiliklar</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+
+
+
+    </div>
+</header>
+
+{% endblock nav %}
+<div class="container">
+    <div class="banner-box">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner-back">
+                    <a href="{% url 'news' %}">
+                        <h3><i class="fa-solid fa-arrow-left"></i> Orqaga</h3>
+                    </a>
+                </div>
+                <div class="bannerimg">
+                    <img src="{{object.rasm.url}}" alt="bannerimg" />
+                </div>
+                <div class="banner-body">
+                    <div class="banner-date">
+                        <span>15.09.2023</span>
+                    </div>
+                    <h2>
+                        {{object.title}}
+                    </h2>
+                    <p class="banner-text">
+                        {{object.text | safe}}
+                    </p>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

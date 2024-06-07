@@ -1,0 +1,155 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% block nav %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <!-- <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1> -->
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="/" class="logo me-auto"><img src="assets/img/ATT-logo.png" alt="" class="img-fluid">AVITSENNA
+      TIBBIYOT TEXNIKUMI</a>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="nav-link scrollto active" href="{% url 'index' %}">Bosh sahifa</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'about' %}">Biz haqimizda</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'qabul' %}">Qabul</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'yonalishlar' %}">Yo'nalishlar</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'rahbariyat' %}">Rahbariyat</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'news' %}">Yangiliklar</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  
+
+    <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">ARIZA</span>
+      TOPSHIRISH</a> -->
+
+  </div>
+</header><!-- End Header -->
+  
+{% endblock nav %}
+  
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container">
+
+        
+      <div class="section-title">
+        <h2>Qabul ma'lumotlari</h2>
+        <p>Kerakli hujjatlar ro'yxati quyida keltirilgan</p>
+      </div>
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up">
+            O'rta maxsus diplom yoki 11-sinf shahodatnomasi
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100">
+            Passport nusxasi
+          </li>  
+        </ul>
+      </div>
+
+      <div class="section-title">
+        <h2>Ko'p so'ralgan savollar</h2>
+        <p>Talabalar va abiturientlar tomonidan eng ko'p berilgan savollar quyida keltirilgan.</p>
+      </div>
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Nodavlat texnikumning diplomi o‘tadim?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+                Oʻzbekiston Respublikasi “Taʼlim toʻgʻrisida”gi qonunining 31-moddasiga muvofiq, Davlat taʼlim standartlari va davlat taʼlim talablariga muvofiq taʼlim xizmatlarini koʻrsatuvchi nodavlat taʼlim tashkilotlari bitiruvchilarga davlat tomonidan tasdiqlangan namunadagi taʼlim toʻgʻrisidagi hujjatlarni beradi.
+                Yaʼni, tegishli litsenziyaga ega nodavlat  taʼlim tashkilotlari tomonidan berilgan diplomlar davlat taʼlim muassasalari diplomlari bilan teng darajada qabul qilinadi.
+              </p>
+              <img src="assets/img/guvoh.jpg" alt="">
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bir o'quv yili uchun kontrakt to'lovi qancha?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eng kam mehnatga haq to'lash miqdorining 13 barobariga teng. (12.740.000 so'm)
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Kontrakt to'lovini bo'lib to'lasa bo'ladimi?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Ha, albatta. Birinchi va ikkinchi semestr boshida 10 kun ichida to'lashingiz kerak.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Kontrakt to'lovi uchun talim krediti olish mumkinmi?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Ha albatta, batafsil ma'lumotni istalgan bankdan yoki texnikum buxgalteriya bo'limidan olishingiz mumkin.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section><!-- End Frequently Asked Questions Section -->
+
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Kontakt ma'lumotlar</h2>
+          </div>
+        </div>
+  
+        <div>
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10086.341942910125!2d69.2111897746577!3d41.27214175226385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1702827040765!5m2!1sru!2s%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+        </div>
+  
+        <div class="container">
+          <div class="row mt-5">
+  
+            <div class="col-lg-12">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Manzil:</h4>
+                  <p>Toshkent shahri, Chilonzor tumani, Katta Qozirobod MFY, Farxod 16-uy</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Telefon:</h4>
+                  <p>(55) 511 01 62,</p>
+                  <p>(55) 511 01 65,</p>
+                  <p>(33) 046 03 06</p>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  </section><!-- End Contact Section -->
+
+  
+  {% endblock content %}

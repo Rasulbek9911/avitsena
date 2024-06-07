@@ -1,0 +1,171 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% block nav %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <!-- <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1> -->
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="/" class="logo me-auto"><img src="assets/img/ATT-logo.png" alt="" class="img-fluid">AVITSENNA
+      TIBBIYOT TEXNIKUMI</a>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="nav-link scrollto active" href="{% url 'index' %}">Bosh sahifa</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'about' %}">Biz haqimizda</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'qabul' %}">Qabul</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'yonalishlar' %}">Yo'nalishlar</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'rahbariyat' %}">Rahbariyat</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'news' %}">Yangiliklar</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  
+
+    <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">ARIZA</span>
+      TOPSHIRISH</a> -->
+
+  </div>
+</header><!-- End Header -->
+  
+{% endblock nav %}
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Yo'nalishlar</h2>
+            <p>AVITSENNA tibbiyot texnikumida 3 xil yo'nalish mavjud.</p>
+          </div>
+  
+          <div class="row gy-4">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Hamshiralik ishi - 3 yil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Hamshiralik ishi - 2 yil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Farmatsiya - 3 yil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Fel’dsherlik ishi - 3 yil</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Hamshiralik ishi - 3 yil</h3>
+                      <p class="fst-italic">O’qish muddati – 3 yillik</p>
+                      <p>O'qish kontrakti - 9 900 000 so'm</p>
+                      <p>-Barcha davolash-profilaktika muassasalarda, QVP (qishloq vrachlik punkti) larda, tuman tibbiyot birlashmalari, viloyat va Respublika tibbiyot muassasalarida; -Respublika shoshilinch tibbiy yordam ilmiy markazi va uning filialarida,ixtisoslashtirilgan ilmiy markazlarida, Ilmiy tekshirish instituti klinikalarida, tez tibbiy yordam stansiyalarida;</p>
+                      <p>-Oilaviy poliklinikalar, fizioterapiya va reabilitatsiya bo’limlarida; -Ijtimoiy ta’minot muassasalarida, shifokor xonasida, muolaja, operatsiya, emlash va registratura xonalarida;</p>
+                      <p>-Markazlashgan sterilizatsiya bo’limlarida;</p>
+                      <p>-Fizioterapiya bo’limlarida aholi sog’liqni saqlash va bemorlarga yo’naltirilgan hamshirlik ishini amalga oshiradi, shuningdek parxez ovqatlanish, davolovchi jismoniy tarbiya va massaj hamshirasi, tibbiyot statisti sifatida faoliyat yuritadi.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Hamshiralik ishi - 2 yil</h3>
+                      <p class="fst-italic">O’qish muddati – 2 yillik</p>
+                      <p>O'qish kontrakti - 9 900 000 so'm</p>
+                      <p>-Barcha davolash-profilaktika muassasalarda, QVP (qishloq vrachlik punkti) larda, tuman tibbiyot birlashmalari, viloyat va Respublika tibbiyot muassasalarida; -Respublika shoshilinch tibbiy yordam ilmiy markazi va uning filialarida,ixtisoslashtirilgan ilmiy markazlarida, Ilmiy tekshirish instituti klinikalarida, tez tibbiy yordam stansiyalarida;</p>
+                      <p>-Oilaviy poliklinikalar, fizioterapiya va reabilitatsiya bo’limlarida; -Ijtimoiy ta’minot muassasalarida, shifokor xonasida, muolaja, operatsiya, emlash va registratura xonalarida;</p>
+                      <p>-Markazlashgan sterilizatsiya bo’limlarida;</p>
+                      <p>-Fizioterapiya bo’limlarida aholi sog’liqni saqlash va bemorlarga yo’naltirilgan hamshirlik ishini amalga oshiradi, shuningdek parxez ovqatlanish, davolovchi jismoniy tarbiya va massaj hamshirasi, tibbiyot statisti sifatida faoliyat yuritadi.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Farmatsiya - 3 yil</h3>
+                      <p class="fst-italic">O’qish muddati – 3 yillik</p>
+                      <p>O'qish kontrakti - 9 900 000 so'm</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Fel'dsherlik ishi - 3 yil</h3>
+                      <p class="fst-italic">O’qish muddati – 3 yillik</p>
+                      <p>O'qish kontrakti - 9 900 000 so'm</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Departments Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Kontakt ma'lumotlar</h2>
+          </div>
+        </div>
+  
+        <div>
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10086.341942910125!2d69.2111897746577!3d41.27214175226385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1702827040765!5m2!1sru!2s%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+        </div>
+  
+        <div class="container">
+          <div class="row mt-5">
+  
+            <div class="col-lg-12">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Manzil:</h4>
+                  <p>Toshkent shahri, Chilonzor tumani, Katta Qozirobod MFY, Farxod 16-uy</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Telefon:</h4>
+                  <p>(55) 511 01 62,</p>
+                  <p>(55) 511 01 65,</p>
+                  <p>(33) 046 03 06</p>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  </section><!-- End Contact Section -->
+{% endblock content %}
